@@ -3,13 +3,13 @@ provider "aws" {
 }
 
 #Create security group with firewall rules
-resource "aws_security_group" "my_security_group" {
+resource "aws_security_group" "my_group_security" {
   name        = var.security_group
   description = "security group for Ec2 instance"
 
   ingress {
-    from_port   = 8080
-    to_port     = 8080
+    from_port   = 8081
+    to_port     = 8090
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -35,7 +35,7 @@ resource "aws_security_group" "my_security_group" {
 }
 
 # Create AWS ec2 instance
-resource "aws_instance" "myFirstInstance" {
+resource "aws_instance" "MY JENKINS SERVER" {
   ami           = var.ami_id
   key_name = var.key_name
   instance_type = var.instance_type
