@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "security_group" {
   description = "Name of security group"
-  default     = "my-ec2-security-group"
+  default     = "sg-00a8ffc8f227829cd"
 }
 
 variable "tag_name" {
