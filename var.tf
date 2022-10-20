@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "security_group" {
   description = "Name of security group"
-  default     = "my-jenkins-security-group"
+  default     = "my-ec2-security-group"
 }
 
 variable "tag_name" {
@@ -25,5 +25,5 @@ variable "tag_name" {
 
 variable "ami_id" {
   description = "AMI for Ubuntu Ec2 instance"
-  default     = "ami-0b9064170e32bde34"
+  default     = "ami-062df10d14676e201"
 }
